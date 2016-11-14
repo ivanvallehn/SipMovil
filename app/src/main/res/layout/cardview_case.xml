@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    card_view:cardElevation="@dimen/elevation_card"
+    android:layout_height="@dimen/height_conctact">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <org.grupovision.sipmovil.utilities.RoundedImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:src="@drawable/img_profile"
+            android:id="@+id/imgProfileThumb"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".7"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="@dimen/padding_small"
+            >
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_normal"
+            android:text="Identification Number"
+            android:textStyle="bold"
+            android:id="@+id/txtIdentificationNumber"
+            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_normal"
+                android:text="Full Name"
+                android:id="@+id/txtFullName"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:id="@+id/txtResult"
+            android:background="@color/colorAccent"
+            />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

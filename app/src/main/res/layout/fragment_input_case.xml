@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.grupovision.sipmovil.fragments.InputCaseFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_medium"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/img_profile"
+                        android:scaleType="fitXY"
+                        android:id="@+id/imgProfile"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_photo"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/txtAddPhoto"/>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_medium">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/identification_number"
+                        android:inputType="text"
+                        android:id="@+id/etIdentificationNumber"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/name"
+                        android:inputType="text"
+                        android:id="@+id/etFirstname"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/lastname"
+                        android:inputType="text"
+                        android:id="@+id/etLastname"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_medium"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/left_finger"
+                        android:scaleType="fitXY"
+                        android:id="@+id/imgProfile2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_photo"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/txtAddPhoto2"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/right_finger"
+                        android:scaleType="fitXY"
+                        android:id="@+id/imgProfile3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_photo"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/txtAddPhoto3"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+</LinearLayout>

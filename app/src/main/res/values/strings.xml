@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SIP Movil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="identification_number">Identification Number</string>
+    <string name="name">Name</string>
+    <string name="lastname">Lastname</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="save">Save</string>
+    <string name="error_field">Mandatory field</string>
+    <string name="save_success">Save Success :)</string>
+    <string name="failed_save">Failed Save</string>
+    <string name="failed_take_photo">Failed storage photo</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="important">Important</string>
+    <string name="confirmationDelete">Are you sure to delete?</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="update_success">Update Success</string>
+</resources>
