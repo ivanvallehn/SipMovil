@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import org.grupovision.sipmovil.R;
 import org.grupovision.sipmovil.fragments.CaseRVFragment;
 import org.grupovision.sipmovil.fragments.InputCaseFragment;
+import org.grupovision.sipmovil.fragments.LoginFragment;
 
 /**
  * Created by ivalle on 07/11/2016.
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements CaseRVFragment.Ca
         setContentView(R.layout.activity_main);
 
         fm = getSupportFragmentManager();
-        fm.beginTransaction().replace(R.id.content,new CaseRVFragment()).commit();
+        fm.beginTransaction().replace(R.id.content,new LoginFragment()).commit();
     }
 
     @Override

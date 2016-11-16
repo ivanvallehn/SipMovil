@@ -1,13 +1,69 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.grupovision.sipmovil.fragments.LoginFragment">
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_logo"
+        android:layout_height="@dimen/layout_logo">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:src="@drawable/img_logo4"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/blue"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_big"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_medium"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_medium"
+            android:hint="@string/userOrEmail"
+            android:background="@color/gray"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="@dimen/padding_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:id="@+id/etUser"
+            />
 
-</FrameLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_medium"
+            android:hint="@string/password"
+            android:background="@color/gray"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="@dimen/padding_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:id="@+id/etPassword"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:id="@+id/btnEnter"
+            />
+    </LinearLayout>
+</LinearLayout>
